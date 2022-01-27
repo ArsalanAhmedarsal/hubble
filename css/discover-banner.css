@@ -1,0 +1,50 @@
+.discover-banner-warper {
+    margin-top: 125px;
+    width: 100%;
+    min-height: 450px;
+    background-color: #FF5A00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover-banner-warper .discover-headiing {
+
+
+    font-size: 44px;
+    font-weight: 700;
+    max-width: 500px;
+    text-align: center;
+    color:white;
+
+}
+
+.discover-banner-warper a {
+
+    background-color: white;
+    color: #FF5A00;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: 50px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.discover-banner-warper a:hover {
+    background-color: #182953;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.discover-banner-warper .discovery-left-flower {
+    position: absolute;
+    left: 10px;
+}
+
+.discover-banner-warper .discovery-right-flower  {
+    position: absolute;
+    right: 10px;
+}

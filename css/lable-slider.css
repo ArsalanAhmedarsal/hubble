@@ -1,0 +1,12 @@
+.lable-slider-wraper {
+    margin-top: 10px;
+}
+.lable-slider-wraper .owl-prev{
+    left: 0;
+    top: 30%;
+}
+
+.lable-slider-wraper .owl-next{
+    right: 0;
+    top: 30%;
+}

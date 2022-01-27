@@ -1,0 +1,226 @@
+@media only screen and (max-width: 1250px) {
+
+  .container {
+
+    width: 98%;
+    padding: 0px 0px;
+  }
+
+  .listing-slider-one .owl-prev {
+    left: -20px;
+  }
+
+  .listing-slider-one .owl-next {
+    right: -20px;
+  }
+
+
+  .header-slider-warper .banner-heading {
+
+    left: 90px;
+
+  }
+
+
+
+}
+
+
+@media only screen and (max-width: 991px) {
+
+  .top-navbar-wraper .top-nav-bar-left li:nth-child(2),
+  .top-navbar-wraper .top-nav-bar-left li:nth-child(3) {
+
+    display: none
+  }
+
+  .nav-bar-main .navbar {
+    padding: 0 10px;
+  }
+
+  .main-nav-left ul {
+    display: none;
+  }
+
+  .nav-bar-main .navbar ul.main-nav-left li {
+    display: none;
+  }
+
+  .main-nav-left ul {
+    display: block;
+    position: absolute;
+    top: 104px;
+    width: 100%;
+    background-color: #efefefe6;
+    backdrop-filter: blur(16px);
+    z-index: 21;
+    left: -100%;
+    height: 100vh;
+    transition: all 0.5s cubic-bezier(0.65, 0.05, 0.03, 1);
+  }
+
+  .mobile-nav-show {
+    left: 0 !important;
+}
+
+.nav-bar-main .navbar button {
+  display: block;
+}
+
+  .navbar .main-nav-left li a, .navbar .main-nav-right li a {
+    color: #FF5A00;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .navbar .main-nav-left li {
+    margin: 40px 40px;
+  }
+
+
+
+  .nav-bar-main .navbar ul.main-nav-right li a .navbar-account,
+  .nav-bar-main .navbar ul.main-nav-right li a .navbar-cart {
+    display: none;
+  }
+
+  .nav-bar-main .navbar .responsive-hamburger {
+    display: block;
+  }
+
+
+  .footer-wraper .footer-columns-wraper .footer-company-details {
+
+
+    width: 100%;
+    flex-basis: 100% !important;
+
+
+  }
+
+  .footer-wraper .footer-columns-wraper .footer-company-details ul {
+
+    display: flex;
+    margin-bottom: 20px;
+
+  }
+
+  .footer-wraper .footer-columns-wraper .footer-company-details ul li {
+
+
+    flex: 1;
+    margin-right: 15px;
+
+  }
+
+  .footer-wraper .footer-columns-wraper .footer-company-details .footer-heading img {
+    margin: 0 auto;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .Product-qualities-container {
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .Product-qualities-container .Product-qualities-card p {
+
+
+    max-width: 370px;
+
+  }
+
+  .Product-qualities-container .d {
+
+    display: none;
+  }
+
+  .discover-banner-warper .discovery-left-flower,
+  .discover-banner-warper .discovery-right-flower {
+
+    display: none;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 580px) {
+
+  .header-slider-warper .banner-heading {
+    left: 50px;
+  }
+
+  .lable-slider-wraper .lable-slider .owl-nav,
+  .listing-slider-one-wraper .listing-slider-one .listing-slider .owl-nav {
+    display: none;
+  }
+
+
+  .footer-wraper .footer-column .footer-heading {
+
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+
+  .nav-bar-top .top-nav-bar-right li:first-child {
+    display: none;
+  }
+
+  .tea-big-bg {
+    height: 100%;
+  }
+
+
+  .tea-big-bg .tea-flavours-wrpaer {
+    padding-bottom: 250px;
+    margin-bottom: 0;
+  }
+
+
+  .listing-slider-one .owl-prev {
+    left: -15px;
+  }
+
+  .listing-slider-one .owl-next {
+    right: -15px;
+  }
+
+  .listing-slider-one .cta-btn {
+    margin-top: 50px;
+  }
+
+
+  .listing-slider-one .owl-drag .owl-dots {
+
+    display: block !important;
+  }
+
+  .footer-wraper .footer-columns-wraper .footer-company-details ul {
+
+    flex-direction: column;
+  }
+
+  .footer-wraper .footer-columns-wraper .footer-company-details .footer-heading img {
+    margin: 0;
+  }
+
+
+
+}
+
+
+/* @media only screen and (max-width: 30rem) {
+    
+    .Product-qualities-container {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+    }
+  } */

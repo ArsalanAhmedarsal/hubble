@@ -1,0 +1,76 @@
+.listing-slider-one-wraper {
+
+    margin-top: 85px;
+}
+
+.listing-slider-one-wraper .listing-slider-one {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.listing-slider-one-wraper .slider-one-product {
+
+   
+    
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.slider-one-product:before {
+    position: absolute;
+    content: "";
+    background-color: #FFE5D6;
+    width: 98%;
+    height: 500px;
+    top: 100px;
+    border-radius: 8px;
+}
+
+
+.listing-slider-one-wraper .slider-one-product .slider-one-product-img-warper {
+    position: absolute;
+}
+
+.listing-slider-one-wraper .slider-one-product .slider-one-product-content {
+    position: absolute;
+    /* bottom: 80px; */
+    width: 260px;
+    top: 400px;
+}
+
+.listing-slider-one-wraper .slider-one-product {
+    margin-bottom: 55px;
+}
+
+
+.listing-slider-one-wraper .slider-one-product .slider-one-product-detail {
+    margin-top: 20px;
+    color: #A78275;
+}
+
+.listing-slider-one-wraper .slider-one-product .slider-one-product-price {
+
+    color: #182953;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+
+
+.listing-slider-one .owl-drag .owl-dots {
+
+    display: none !important;
+}
+
+
+.listing-slider-one  .cta-btn {
+    margin-top: 80px;
+    text-align: center;
+}

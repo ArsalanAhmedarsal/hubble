@@ -1,0 +1,52 @@
+.product-qualities-wraper {
+    margin-top: 80px;
+}
+
+.Product-qualities-container {
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: auto;
+    padding: 8px;
+
+}
+
+
+.product-qualities-wraper .page-heading h2 {
+    margin-bottom: 80px;
+}
+
+.Product-qualities-card {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 160px;
+    transition: background-color .3s ease-out, color .3s ease-out, border-radius .3s linear;
+
+    margin-bottom: 50px;
+}
+
+.Product-qualities-container .a , .Product-qualities-container .d {
+    grid-row: span 2;
+
+    min-height: 160px;
+}
+
+
+.product-qualities-wraper .Product-qualities-card-top {
+
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.product-qualities-wraper .Product-qualities-card-top p {
+
+    max-width: 370px;
+    margin: 20px auto 0 auto;
+
+}
