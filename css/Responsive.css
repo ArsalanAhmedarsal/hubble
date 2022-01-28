@@ -69,7 +69,7 @@
 
   }
 
-  .nav-bar-main .navbar button {
+  .nav-bar-main .navbar .Navigatin-toggle {
     display: block;
   }
 
@@ -183,6 +183,8 @@
     margin-top: 0;
 
   }
+
+}
 
   @media only screen and (max-width: 580px) {
 

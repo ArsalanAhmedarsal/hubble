@@ -46,18 +46,30 @@
 
                 <ul class="navbar-nav ml-auto top-nav-bar-right">
 
-                    <li class="nav-item">
-                        <span><img src="img/search_24px.png" alt=""></span>
-                        <a class="nav-link" href="#">Search store...</a>
+                    <li class="nav-item search-box">
+
+                        <!-- <a class="nav-link" href="#">Search store...</a> -->
+                        <form action="">
+                            <span><img src="img/search_24px.png" alt=""></span>
+                            <input type="search" placeholder="Search store...">
+                        </form>
                     </li>
 
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item language-dropdown-wraper">
                         <a class="nav-link" href="#">
                             (EN) English
-                           
-                            <span class="language-change-icon"><img src="img/language arrow.svg" alt=""></span> 
+
+                            <span class="language-change-icon"><img src="img/language arrow.svg" alt=""></span>
                         </a>
+
+                        <div class="language-dropdown">
+                            <ul>
+                                <li><a href="#"> (EN) English</a></li>
+                                <li><a href="#"> (DE) German</a></li>
+                            </ul>
+                        </div>
+
                     </li>
                 </ul>
 
@@ -75,7 +87,7 @@
 
 
 
-                <button onclick="NavigtionToggle()">
+                <button onclick="NavigtionToggle()" class="Navigatin-toggle">
 
                     <div class="responsive-hamburger">
                         <a href="#"><img src="img/hamburger.svg" alt=""></a>
@@ -95,49 +107,55 @@
 
                         <li><a href="#">Teashop</a>
 
-                          <div class="mega-menu-box">
-                              <div class="content">
-                                  <div class="row">
-                                      <a href="#"><header>Our Teas</header></a>
-                                      <ul>
-                                        <li><a href="#">Black Tea</a></li>
-                                        <li><a href="#">Green Tea</a></li>
-                                        <li><a href="#">Herbal &amp; Vital Tea</a></li>
-                                        <li><a href="#">Fruit Tea</a></li>
-                                        <li><a href="#">Roobios</a></li>
-                                        <li><a href="#">Oolong</a></li>
-                                        <li><a href="#">Ice Tea</a></li>
-                                        <li><a href="#">White Tea</a></li>
-                                      </ul>
-                                  </div>
-                                  <div class="row">
-                                    <a href="#"><header>By type</header></a>
-                                    <ul>
-                                        <li><a href="#">Black Tea</a></li>
-                                        <li><a href="#">Green Tea</a></li>
-                                        <li><a href="#">Herbal &amp; Vital Tea</a></li>
-                                        <li><a href="#">Fruit Tea</a></li>
-                                        <li><a href="#">Roobios</a></li>
-                                       
-                                    </ul>
-                                </div>
-                                <div class="row">
-                                    <a href="#"><header>TEAWARE</header></a>
-                                    <ul>
-                                        <li><a href="#">Black Tea</a></li>
-                                        <li><a href="#">Green Tea</a></li>
-                                        <li><a href="#">Herbal &amp; Vital Tea</a></li>
-                                        <li><a href="#">Fruit Tea</a></li>
-                                        
-                                    </ul>
-                                </div>
-                              </div>
+                            <div class="mega-menu-box">
+                                <div class="content">
+                                    <div class="row">
+                                        <a href="#">
+                                            <header>Our Teas</header>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Black Tea</a></li>
+                                            <li><a href="#">Green Tea</a></li>
+                                            <li><a href="#">Herbal &amp; Vital Tea</a></li>
+                                            <li><a href="#">Fruit Tea</a></li>
+                                            <li><a href="#">Roobios</a></li>
+                                            <li><a href="#">Oolong</a></li>
+                                            <li><a href="#">Ice Tea</a></li>
+                                            <li><a href="#">White Tea</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#">
+                                            <header>By type</header>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Black Tea</a></li>
+                                            <li><a href="#">Green Tea</a></li>
+                                            <li><a href="#">Herbal &amp; Vital Tea</a></li>
+                                            <li><a href="#">Fruit Tea</a></li>
+                                            <li><a href="#">Roobios</a></li>
 
-                              <!-- <div class="navigation-drop-doodle">
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#">
+                                            <header>TEAWARE</header>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Black Tea</a></li>
+                                            <li><a href="#">Green Tea</a></li>
+                                            <li><a href="#">Herbal &amp; Vital Tea</a></li>
+                                            <li><a href="#">Fruit Tea</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="navigation-drop-doodle">
                                   <img src="img/footer-doodle.png" alt="">
                               </div> -->
 
-                          </div>  
+                            </div>
 
 
                         </li>
@@ -151,10 +169,33 @@
 
 
                 <ul class="main-nav-right">
-                    <li><a href="#">
-                            <span><img src="img/user-icon.svg" alt=""></span>
-                            <div class="navbar-account">Account</div>
-                        </a></li>
+
+                    <li>
+                        
+                        
+                      
+                     <a href="#">
+                        <span><img src="img/user-icon.svg" alt=""></span>
+                        <div class="navbar-account">Account</div>
+                     </a>
+<!-- 
+                            <div class="dropdown">
+                                
+                                <button onclick="myFunction()" class="dropbtn navbar-account">
+                                    
+                                    <span><img src="img/user-icon.svg" alt=""></span>
+                                    Account</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                            </div> -->
+
+
+                       
+                    </li>
+
                     <li><a href="#">
                             <span>
                                 <img src="img/cart-icon.svg" alt="">
@@ -566,7 +607,7 @@
                     <div class="gallery-card g">
                         <img src="img/image 2.2.jpg" alt="">
                     </div>
-                  </div>
+                </div>
 
 
             </div>
@@ -608,7 +649,9 @@
                     </div>
                     <ul>
                         <li><span>Schlürf GmbH</span>, Sickingenstraße 20-28, 10553 Berlin, Germany</li>
-                        <li><span>Contact us at</span> <a href="tel:523546546">+49 (0) 30 - 28 47 00 68</a> <span>or</span> <a href="mailto:abc@abc.com">kontakt@schluerf.de</a></li>
+                        <li><span>Contact us at</span> <a href="tel:523546546">+49 (0) 30 - 28 47 00 68</a>
+                            <span>or</span> <a href="mailto:abc@abc.com">kontakt@schluerf.de</a>
+                        </li>
                         <li><span>Opening hours:</span> 9AM - 5PM</li>
                     </ul>
                 </div>
