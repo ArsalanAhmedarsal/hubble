@@ -22,12 +22,12 @@
 }
 
 
-.slider-one-product:before {
+.listing-slider-one-wraper .slider-one-product:before {
     position: absolute;
     content: "";
     background-color: #FFE5D6;
     width: 98%;
-    height: 500px;
+    height: 495px;
     top: 100px;
     border-radius: 8px;
 }
