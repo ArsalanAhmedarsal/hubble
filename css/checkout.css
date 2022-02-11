@@ -1,0 +1,268 @@
+.checkout-header-warper {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.checkout-header-warper .checkout-header-right {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkout-header-warper .checkout-header-right p {
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.checkout-content-waraper {
+
+    display: flex;
+    gap: 120px;
+
+}
+
+.checkout-content-waraper .checkout-content-left {
+
+    width: 330px;
+}
+
+.checkout-content-waraper .checkout-content-left h5 {
+
+    line-height: 35px;
+    max-width: 280px;
+}
+
+.checkout-content-waraper .checkout-content-right {
+
+    flex: 3;
+
+}
+
+.checkout-content-waraper .checkout-content-right h5 {
+
+    max-width: 300px;
+    line-height: 35px;
+}
+
+.checkout-content-waraper .checkout-content-left .login-form {
+    margin-top: 30px;
+    text-align: center;
+    width: 270px;
+}
+
+
+.checkout-content-waraper input {
+
+    display: block;
+    font-family: 'Mulish', sans-serif;
+
+
+}
+
+.checkout-content-waraper  input:focus-visible {
+
+    outline-color: #674E9D;
+    transition: all 0.2s ease;
+}
+
+.checkout-content-waraper input::placeholder {
+
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+
+
+}
+
+.checkout-content-waraper input[type=text],
+.checkout-content-waraper input[type=email],
+.checkout-content-waraper input[type=password] {
+
+    border: none;
+    background-color: #F2F2F8;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.checkout-content-waraper .login-form input {
+
+    width: 270px;
+}
+
+.checkout-content-waraper input[type=submit] {
+
+    background-color: #FF5A00;
+    padding: 18px 15px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 30px;
+}
+
+
+.checkout-content-waraper .checkout-content-left .login-form a {
+
+    color: #FF5A00;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+
+}
+
+.checkout-content-waraper .checkout-advantage {
+
+    margin-top: 30px;
+
+}
+
+.checkout-content-waraper .checkout-advantage .checkout-advantage-heading {
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #182953;
+    margin-bottom: 20px;
+}
+
+.checkout-content-waraper .checkout-advantage ul li {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+
+}
+
+.checkout-content-waraper .checkout-advantage ul li p {
+
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+}
+
+.checkout-content-waraper .checkout-content-right .checkout-new-customer-from-warper {
+
+    margin-top: 30px;
+}
+
+.checkout-new-customer-from-warper select,
+.your-address-form select{
+
+    border: none;
+    background-color: #F2F2F8;
+    padding: 20px 15px;
+    width: 329px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+
+
+.checkout-content-waraper .checkout-content-right .checkout-new-customer-from-warper form .password-text,
+.instruction-text {
+
+    color: #A78275;
+    font-size: 12px;
+    font-weight: 700;
+    max-width: 300px;
+}
+
+.instruction-text {
+    max-width: 500px;
+}
+
+ .select-warper {
+    position: relative;
+    width: 330px;
+
+}
+
+ .select-warper::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    right: 23px;
+    position: absolute;
+    background-image: url(../img/keyboard_arrow_down_24px.png);
+    background-repeat: no-repeat;
+}
+
+.checkout-new-customer-from-warper form input{
+
+    width: 375px;
+}
+
+
+.checkout-content-waraper .checkout-content-right .checkout-your-address-from-warper {
+
+    margin-top: 20px;
+}
+.checkout-content-waraper .checkout-content-right .checkout-your-address-from-warper h5 {
+    margin-bottom: 10px;
+}
+.checkout-content-waraper .checkout-content-right .checkout-your-address-from-warper .your-address-form input{
+
+    width: 570px;
+}
+.checkout-content-waraper .checkout-content-right .checkout-your-address-from-warper .your-address-form .PLZ {
+
+    margin-right: 10px;
+}
+.checkout-content-waraper .checkout-content-right .checkout-your-address-from-warper .your-address-form .PLZ,
+.checkout-content-waraper .checkout-content-right .checkout-your-address-from-warper .your-address-form .Ort {
+
+    width: 277px;
+    display: inline;
+}
+
+
+.checkout-content-waraper .checkout-content-right 
+.checkout-your-address-from-warper .your-address-form .select-warper select,
+
+.checkout-content-waraper .checkout-content-right 
+.checkout-your-address-from-warper .your-address-form .select-warper{
+
+    width: 277px;
+}
+
+.checkout-your-address-from-warper .your-address-form h5 {
+
+    margin-bottom: 10px;
+}
+
+
+.form-btn-green {
+    display: block;
+    margin-top: 20px;
+    background-color: #29B05A;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    width: 270px;
+    text-align: center;
+    
+
+}
+
+.form-btn-green:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #1AAD92;
+}

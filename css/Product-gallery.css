@@ -29,7 +29,7 @@
     transition: all 0.2s ease-in-out 0s;
 }
 
-.products-gallery-wraper .kattle-section a:hover { 
+.products-gallery-wraper .kattle-section a:hover {
 
     background-color: #ff5a00;
     transition: all 0.2s ease-in-out 0s;
@@ -43,30 +43,53 @@
 }
 
 .gallery-container {
-        margin-top: 50px;
-        column-count:3 ;
-        gap: 10px;
+    margin-top: 50px;
+    column-count: 3;
+    gap: 10px;
 
 }
 
-.gallery-card {
+.gallery-container .gallery-card {
 
     display: inline-block;
     margin-bottom: 10px;
     border-radius: 8px;
+    position: relative;
 }
 
-.gallery-card img {
+.gallery-container .gallery-card-overlay {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 8px;
+    transition: .5s ease;
+    background-color: #0000006b;
+
+
+}
+
+.gallery-container .gallery-card:hover .gallery-card-overlay {
+
+    opacity: 1;
+}
+
+.gallery-container .gallery-card img {
 
     border-radius: 8px;
 }
 
-.gallery-card:nth-child(4) {
+.gallery-container .gallery-card:nth-child(4) {
 
     margin-top: 200px;
 }
 
-.gallery-card:nth-child(6) {
+.gallery-container .gallery-card:nth-child(6) {
 
     margin-top: 100px;
 }

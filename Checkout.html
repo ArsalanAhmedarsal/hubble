@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Responsive.css">
+    <title>Checkout</title>
+
+   
+
+</head>
+
+<body>
+
+    <div class="nav-bar-top">
+        <div class="container">
+
+
+
+            <div class="top-navbar-wraper">
+                <ul class="navbar-nav top-nav-bar-left">
+                    <li class="nav-item active">
+                        <span><img src="img/Top-nav-icon.png" alt="schliuf-img"></span>
+                        <a class="nav-link" href="#">Biocertified & Made In Germany</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <span><img src="img/Top-nav-icon.png" alt="schliuf-img"></span>
+                        <a class="nav-link" href="#">Premium Taste & Sustainable Packaging</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <span><img src="img/Top-nav-icon.png" alt="schliuf-img"></span>
+                        <a class="nav-link" href="#">Free Shipping From 20€</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto top-nav-bar-right">
+
+                    <li class="nav-item search-box">
+
+                        <!-- <a class="nav-link" href="#">Search store...</a> -->
+                        <form action="">
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill=""
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.2583 9.66667H10.9167L15.075 13.8333L13.8333 15.075L9.66667 10.9167V10.2583L9.44167 10.025C8.49167 10.8417 7.25833 11.3333 5.91667 11.3333C2.925 11.3333 0.5 8.90833 0.5 5.91667C0.5 2.925 2.925 0.5 5.91667 0.5C8.90833 0.5 11.3333 2.925 11.3333 5.91667C11.3333 7.25833 10.8417 8.49167 10.025 9.44167L10.2583 9.66667ZM2.16667 5.91667C2.16667 7.99167 3.84167 9.66667 5.91667 9.66667C7.99167 9.66667 9.66667 7.99167 9.66667 5.91667C9.66667 3.84167 7.99167 2.16667 5.91667 2.16667C3.84167 2.16667 2.16667 3.84167 2.16667 5.91667Z"
+                                        fill="#FF5A00" />
+                                </svg>
+
+                            </span>
+                            <input type="search" placeholder="Search store...">
+                        </form>
+                    </li>
+
+                    <div class="language-dropdown-wraper">
+
+                        <form action="#">
+
+                            <select name="language" id="language">
+                                <option value="volvo">(EN) English</option>
+                                <option value="saab">(DE) German</option>
+                               
+                            </select>
+
+                        </form>
+
+                    </div>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="nav-bar-main">
+        <div class="container">
+            <nav class="navbar">
+
+
+
+                <button onclick="NavigtionToggle()" class="Navigatin-toggle">
+
+                    <div class="responsive-hamburger">
+                        <a href="#"><img src="img/hamburger.svg" alt="schliuf-img"></a>
+                    </div>
+                </button>
+
+
+
+                <div class="main-nav-left">
+                    <div class="main-logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="schliuf-img">
+                        </a>
+                    </div>
+
+                    <ul class="" id="mobile-nav-toggle">
+
+                        <li><a href="#">Teashop</a>
+
+                            <div class="mega-menu-box">
+                                <div class="content">
+                                    <div class="row">
+                                        <a href="#">
+                                            <header>Our Teas</header>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Black Tea</a></li>
+                                            <li><a href="#">Green Tea</a></li>
+                                            <li><a href="#">Herbal &amp; Vital Tea</a></li>
+                                            <li><a href="#">Fruit Tea</a></li>
+                                            <li><a href="#">Roobios</a></li>
+                                            <li><a href="#">Oolong</a></li>
+                                            <li><a href="#">Ice Tea</a></li>
+                                            <li><a href="#">White Tea</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#">
+                                            <header>By type</header>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Black Tea</a></li>
+                                            <li><a href="#">Green Tea</a></li>
+                                            <li><a href="#">Herbal &amp; Vital Tea</a></li>
+                                            <li><a href="#">Fruit Tea</a></li>
+                                            <li><a href="#">Roobios</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#">
+                                            <header>TEAWARE</header>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Black Tea</a></li>
+                                            <li><a href="#">Green Tea</a></li>
+                                            <li><a href="#">Herbal &amp; Vital Tea</a></li>
+                                            <li><a href="#">Fruit Tea</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="navigation-drop-doodle">
+                                  <img src="img/footer-doodle.png" alt="schliuf-img">
+                              </div> -->
+
+                            </div>
+
+
+                        </li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Our teastory</a></li>
+                        <li><a href="#">Gastronomy</a></li>
+                        <li><a href="#">NEW</a></li>
+                    </ul>
+                </div>
+
+
+
+                <ul class="main-nav-right">
+
+                    <li>
+
+
+
+                        <a href="#">
+                            <span><img src="img/user-icon.svg" alt="schliuf-img"></span>
+                            <div class="navbar-account">Account</div>
+                        </a>
+                        <!-- 
+                            <div class="dropdown">
+                                
+                                <button onclick="myFunction()" class="dropbtn navbar-account">
+                                    
+                                    <span><img src="img/user-icon.svg" alt="schliuf-img"></span>
+                                    Account</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                            </div> -->
+
+
+
+                    </li>
+
+                    <li><a href="#">
+                            <span>
+                                <img src="img/cart-icon.svg" alt="schliuf-img">
+                            </span>
+                            <div class="navbar-cart">Cart</div>
+                        </a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="checkout-header-warper">
+            <h2>Your information</h2>
+
+
+
+            <div class="checkout-header-right">
+                <span>
+                    <img src="img/https_24px.png" alt="schliuf-img">
+
+                </span>
+                <p>Your data is super secure with us</p>
+            </div>
+        </div>
+
+
+        <div class="checkout-content-waraper">
+
+
+            <div class="checkout-content-left">
+
+                <h5>Log in to your tea account and save time</h5>
+
+                <div class="login-form">
+
+                    <form action="#">
+
+                        <input type="email" id="fname" name="fname" value="" placeholder="Your email" required="ture">
+
+                        <input type="password" id="lname" name="lname" value="" placeholder="Your password">
+
+                        <input type="submit" value="LOG IN" class="">
+
+                        <a href="#">Fogot your password? </a>
+
+
+                    </form>
+
+                </div>
+
+
+                <div class="checkout-advantage">
+                    <div class="checkout-advantage-heading">Meine Vorteile</div>
+
+                    <ul>
+                        <li>
+                            <span><img src="img/thumb_up_24px.png" alt="schliuf-img"></span>
+                            <p>Schnelles Einkaufen</p>
+                        </li>
+
+                        <li>
+                            <span><img src="img/thumb_up_24px.png" alt="schliuf-img"></span>
+                            <p>Speichern Sie Ihre Benutzerdaten und Einstellungen</p>
+                        </li>
+
+                        <li>
+                            <span><img src="img/thumb_up_24px.png" alt="schliuf-img"></span>
+                            <p>Einblick in Ihre Bestellungen inkl. Sendungsauskunft</p>
+                        </li>
+
+                        <li>
+                            <span><img src="img/thumb_up_24px.png" alt="schliuf-img"></span>
+                            <p>Verwalten Sie Ihr Newsletter-Abo</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+            <div class="checkout-content-right">
+
+                <h5>I’m a new customer and would like to checkout</h5>
+
+
+                <div class="checkout-new-customer-from-warper">
+
+                    <form action="#" method="post">
+
+                        <div class="select-warper">
+                            <select name="Privatkunde" id="Privatkunde">
+                                <option value="volvo">Privatkunde</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+
+                        <div class="select-warper">
+                            <select name="Privatkunde" id="Privatkunde">
+                                <option value="volvo">Anrede*</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+
+                        <input type="text" id="fname" name="fname" value="" placeholder="Vorname*" required="ture">
+
+                        <input type="text" id="lname" name="lname" value="" placeholder="Nachname*">
+
+                        <label class="checkbox-label">Kein Kundenkonto anlegen
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <input type="password" id="lname" name="lname" value="" placeholder="Ihr Passwort*">
+
+
+                        <div class="password-text">
+                            Ihr Passwort muss mindestens 8 Zeichen umfassen.
+                            Berücksichtigen Sie Groß- und Kleinschreibung.
+                        </div>
+
+                    </form>
+                </div>
+
+
+                <div class="checkout-your-address-from-warper">
+
+                    <h5>Ihre Adresse</h5>
+
+
+                    <div class="your-address-form">
+
+                        <form action="#">
+                            <input type="email" id="fname" name="fname" value="" placeholder="Strabe und Nr.*" required="ture">
+
+                            <input type="text" id="fname" name="fname" value="" placeholder="PLZ*" required="ture" class="PLZ">
+    
+                            <input type="text" id="lname" name="lname" value="" placeholder="Ort*" class="Ort">
+    
+                            <div class="select-warper">
+                                <select name="Privatkunde" id="Privatkunde">
+                                    <option value="volvo">Anrede*</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                            </div>
+    
+                            
+                            <label class="checkbox-label">Die Lieferadresse weicht von der Rechnungsadresse ab.
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+
+
+                        </form>
+    
+                        <h5>Datenschutz</h5>
+
+                        <div class="instruction-text">
+                            Ich habe die Datenschutzbestimmungen zur Kenntnis genommen.
+                        </div>
+                        <a href="#" class="form-btn-green">Weiter</a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="footer-wraper">
+        <div class="footer-doodle-img">
+            <img src="img/footer-doodle.png" alt="schliuf-img">
+        </div>
+
+        <div class="container">
+            <div class="footer-columns-wraper">
+                <div class="footer-column footer-company-details">
+                    <div class="footer-heading">
+                        <img src="img/orange-logo.png" alt="schliuf-img">
+                    </div>
+                    <ul>
+                        <li><span>Schlürf GmbH</span>, Sickingenstraße 20-28, 10553 Berlin, Germany</li>
+                        <li><span>Contact us at</span> <a href="tel:523546546">+49 (0) 30 - 28 47 00 68</a>
+                            <span>or</span> <a href="mailto:abc@abc.com">kontakt@schluerf.de</a>
+                        </li>
+                        <li><span>Opening hours:</span> 9AM - 5PM</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <div class="footer-heading">
+                        Our Teas
+                    </div>
+                    <ul>
+                        <li><a href="#">Black Tea</a></li>
+                        <li><a href="#">Green Tea</a></li>
+                        <li><a href="#">Herbal & Vital Tea</a></li>
+                        <li><a href="#">Fruit Tea</a></li>
+                        <li><a href="#">Roobios</a></li>
+                        <li><a href="#">Oolong</a></li>
+                        <li><a href="#">Ice Tea</a></li>
+                        <li><a href="#">White Tea</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <div class="footer-heading">
+                        More
+                    </div>
+                    <ul>
+                        <li><a href="#">Gastronomy</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Shipping & Prices</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <div class="footer-heading">
+                        Follow us on social
+                    </div>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Real Life</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="Js/owl.carousel.min.js"></script>
+    <script src="https://gijsroge.github.io/owl-carousel2-thumbs/assets/OwlCarousel2Thumbs.min.js"></script>
+    <script src="Js/script.js"></script>
+   
+   
+</body>
+
+</html>

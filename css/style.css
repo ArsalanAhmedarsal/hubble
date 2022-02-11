@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('Components.css');
+@import url('components.css');
 @import url('header.css');
 @import url('listing-slider-one.css');
 @import url('tea-flavour.css');
-@import url('Product-qualities.css');
+@import url('product-qualities.css');
 @import url('discover-banner.css');
 @import url('Product-gallery.css');
 @import url('lable-slider.css');
 @import url('footer.css');
+@import url('category.css');
+@import url('product-detail.css');
+@import url('cart.css');
+@import url('checkout.css');
 
 
 :root {
     --Orange-color: #FF5A00;
+}
+
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -44,17 +53,17 @@ ul, li {
     list-style: none;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
 }
 
 h2 {
-    margin-top: 100px;
+
     font-size: 44px;
     font-weight: 700;
     color: #182953;
-    text-align: center;
+
 }
 
 h3 {
@@ -69,10 +78,26 @@ h4 {
     font-size: 24px;
 }
 
+
+h5 {
+
+    color: #182953;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h6 {
+
+    font-size: 14px;
+    font-weight: 800;
+    color: #182953;
+}
+
 p {
     color: #182953;
     font-size: 16px;
     font-weight: 400;
+    margin: 0;
 }
 
 .btn-orange {
@@ -85,11 +110,24 @@ p {
     font-size: 14px;
     font-weight: 800;
     color: white;
+    transition: all 0.2s ease-in-out;
 
+}
+
+.btn-orange:hover {
+    background-color: #182953;
+    color: white;
+    transition: all 0.2s ease-in-out;
 }
 
 .page-heading {
     padding: 0 20px;
+}
+
+.page-heading h2 {
+    margin-top: 100px;
+    /* padding: 0 20px; */
+    text-align: center;
 }
 
 .page-heading p {
@@ -115,6 +153,24 @@ p {
     border-radius: 30px;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
+
+}
+
+.green-big-btn {
+
+    background-color: #29B05A;
+    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 20px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.green-big-btn:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #1AAD92;
 
 }
 
@@ -150,6 +206,7 @@ p {
     display: flex !important;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .owl-prev:hover,
@@ -169,13 +226,259 @@ p {
 
 .owl-theme .owl-dots .owl-dot span {
     background: #ffe5d6;
+    margin-top: 25px;
+}
+
+.product-section-wraper .product-wraper .detail-page-product-slider .owl-theme .owl-dots .owl-dot span {
+
+    background: white !important;
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+
     background: #ff5a00;
 }
+
+
 
 .owl-theme .owl-dots .owl-dot span {
     width: 12px;
     height: 12px;
+}
+
+
+.category-product-add-to-cart-quantity span {
+    cursor: pointer;
+}
+
+/* .category-product-add-to-cart-quantity .number {
+  
+} */
+
+.category-product-add-to-cart-quantity .minus, .category-product-add-to-cart-quantity .plus {
+    width: 20px;
+
+
+    border-radius: 4px;
+    padding: 0 5px;
+
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 26px;
+    color: #FF5A00;
+}
+
+.category-product-add-to-cart-quantity input {
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    color: #FF5A00;
+
+}
+
+.category-product-add-to-cart-quantity input:focus-visible {
+    outline: none;
+}
+
+
+
+
+
+.ui-widget-content {
+    border: none;
+    background: transparent;
+    color: #333333;
+}
+
+.ui-widget.ui-widget-content {
+    border: none;
+}
+
+.ui-widget-header {
+    background: transparent;
+    border: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+
+    background: transparent;
+    border: none;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+
+    padding: 8px 0px;
+}
+
+
+
+
+.ui-state-default a, .ui-state-default a:link {
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #6B6D82;
+    font-family: 'Mulish', sans-serif;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+
+    color: #FF5A00;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Mulish', sans-serif;
+    border-bottom: 4px solid #FF5A00;
+
+}
+
+/* .ui-state-active::before{
+
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 4px;
+    background: #FF5A00;
+    bottom: 0;
+    left: 0;
+} */
+
+.ui-tabs .ui-tabs-panel {
+
+    padding: 20px 0px;
+}
+
+.ui-tabs .ui-tabs-nav li:first-child {
+    padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav li {
+
+    padding: 0 10px;
+    left: -4px;
+}
+
+.ui-tabs .ui-tabs-panel p {
+
+    color: #182953;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Mulish', sans-serif;
+    line-height: 25px;
+}
+
+
+.ui-tabs .ui-tabs-nav {
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+
+}
+
+.ui-tabs .ui-tabs-nav::-webkit-scrollbar {
+
+    background-color: #C8B8B7;
+    height: 2px;
+
+
+}
+
+
+select:focus-visible {
+
+    outline: none;
+}
+
+/* input[type=text],
+ input[type=email],
+ input[type=password] {
+
+    border: none;
+    background-color: #F2F2F8;
+    padding: 20px 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+} */
+
+
+
+/*checkbox style*/
+
+
+.checkbox-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #182953;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-label:hover input~.checkmark {
+    background-color: white;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-label input:checked~.checkmark {
+    background-color: #182953;
+}
+
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-label input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-label .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }

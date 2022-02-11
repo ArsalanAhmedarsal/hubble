@@ -37,6 +37,11 @@
     min-height: 160px;
 }
 
+.Product-qualities-card h3 {
+
+    margin-bottom: 20px;
+}
+
 
 .product-qualities-wraper .Product-qualities-card-top {
 
@@ -50,3 +55,9 @@
     margin: 20px auto 0 auto;
 
 }
+
+
+/* .product-qualities-logo-for-mobile {
+
+    display: none;
+} */
